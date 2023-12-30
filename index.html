@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/signIn.ico" type="image/x-icon">
+    
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/signIn.css">
+</head>
+<body>
+    
+    <div class="loginDiv m-auto mt-5 p-5 text-center">
+        <h1 class="mb-4">Smart Login System</h1>
+        <input class="w-100 form-control mb-3" type="email" id="yourEmail" placeholder="Enter Your Email">
+        <input class="w-100 form-control mb-2" type="password" id="yourPassword" placeholder="Enter Your Password">
+        <div id="checkBox" class=" ms-2 my-2 d-flex" >
+            <input class="d-none" id="myCheckBox" type="checkbox">
+        </div>
+        <p id="error" class="mb-4 d-none">All inputs is required</p>
+        <button class="btn mb-3" id="loginBtn">Log In</button>
+        <p>Don’t have an account? <a id="goToSignUp" href="signUp.html">SignUp</a></p>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/signIn.js"></script>
+</body>
+</html>

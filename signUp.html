@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/signUp-download.ico" type="image/x-icon">
+
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+<body>
+    <div class="signUp m-auto mt-5 p-5 text-center">
+        <h1 class="mb-4">Here you can fill your info. :</h1>
+        <input oninput="validationName()" class="w-100 form-control mb-3" type="text" id="yourName" placeholder="Enter Your Name">
+        <input oninput="validationEmail()" class="w-100 form-control mb-3" type="email" id="yourEmail" placeholder="Enter Your Email">
+        <input class="w-100 form-control mb-3" type="password" id="yourPassword" placeholder="Enter Your Password">
+        <div id="checkBox" class=" ms-2 my-2 d-flex d-none" >
+            <input id="myCheckBox" type="checkbox">
+        </div>
+        <p id="passError" class="my-2 ms-5 d-none text-danger">
+            password must contain at least eight characters, at least one number 
+            and both lower and uppercase letters and special characters
+        </p>
+        <p id="error" class="mb-4  d-none"></p>
+        <button class="btn mb-3" id="signUpBtn">Sign Up</button>
+        <p>Don’t have an account? <a id="goToo" href="index.html">SignIn</a></p>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/signUp.js"></script>
+</body>
+</html>
